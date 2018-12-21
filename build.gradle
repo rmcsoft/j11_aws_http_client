@@ -1,0 +1,17 @@
+plugins {
+  id 'java-library'
+}
+
+ext {
+  flow_adapter_ver = "1.0.2"
+  aws_sdk2_ver = "2.2.0"
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation "org.reactivestreams:reactive-streams-flow-adapters:$flow_adapter_ver"
+  implementation "software.amazon.awssdk:http-client-spi:$aws_sdk2_ver"
+}
